@@ -41,9 +41,10 @@ This MicroPython code implements a simple web server that runs on Pico W and pro
     * It creates a socket, binds it to port 80 (the standard HTTP port) on all available interfaces (`'0.0.0.0'`), and starts listening for incoming connections.
     * The `while True:` loop continuously accepts incoming client connections.
     * For each connection, it calls `handle_request()` in a `try...except...finally` block to handle the request and ensure the client connection is closed even if errors occur.
-![Uploading Screenshot 2025-04-26 155236.png…]()
 
+![Screenshot 2025-04-26 155236](https://github.com/user-attachments/assets/945a680c-e707-4d33-a9d5-a54b2602b497)
 ## Important Security Considerations
+
 
 * **Insecure User Credentials:** The `USERS` dictionary stores usernames and passwords in plain text directly in the code. **This is highly insecure and should never be used in a production environment.** For real applications, you should use proper password hashing (e.g., bcrypt, Argon2) and a more secure way to manage user accounts.
 * **Basic Session Management:** The session management is very basic, relying on in-memory storage and simple session IDs. It lacks features like session expiration, regeneration, and protection against certain types of session attacks.
