@@ -41,6 +41,7 @@ This MicroPython code implements a simple web server that runs on Pico W and pro
     * It creates a socket, binds it to port 80 (the standard HTTP port) on all available interfaces (`'0.0.0.0'`), and starts listening for incoming connections.
     * The `while True:` loop continuously accepts incoming client connections.
     * For each connection, it calls `handle_request()` in a `try...except...finally` block to handle the request and ensure the client connection is closed even if errors occur.
+![Uploading Screenshot 2025-04-26 155236.png…]()
 
 ## Important Security Considerations
 
